@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             onClick = false;
             console.log("on click");
             containerTextDiv.style.height = '70%';
-            imgBtn.setAttribute("src", "../../assets/images/minus.svg");
+            imgBtn.setAttribute("src", "../assets/images/minus.svg");
 
             textP[1].textContent = data.title;
             textP[1].style.color = '#FFC700';

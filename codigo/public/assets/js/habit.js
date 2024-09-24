@@ -20,7 +20,7 @@ import { StorageService } from '../../services/localStorage-service.js';
 		</div>
 		<div id="calTFooter">
 			<h3 id="eventTitle">No events today.</h3>
-			<a href="../../view/tasksView.html" id="calLink">ALL EVENTS</a>
+			<a href="../view/tasksView.html" id="calLink">ALL EVENTS</a>
 		</div>
 	`;
 	var weekDaysFromSunday = '<div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div>';
@@ -29,7 +29,7 @@ import { StorageService } from '../../services/localStorage-service.js';
 
 	$.fn.miniEventCalendar = $.fn.MEC = function (options) {
 		var settings = $.extend({
-			calendar_link: "../../view/tasksView.html",
+			calendar_link: "../view/tasksView.html",
 			events: [],
 			from_monday: false,
 			onMonthChanged: null
@@ -99,10 +99,7 @@ import { StorageService } from '../../services/localStorage-service.js';
 			} else {
 				eventsLink.text("No events available");
 				eventsLink.removeAttr("href");
-				eventsLink.css("cursor", "not-allowed");
-				eventsLink.on("click", function (e) {
-					e.preventDefault();
-				});
+				
 			}
 
 			curMonth = month;
@@ -177,19 +174,19 @@ import { StorageService } from '../../services/localStorage-service.js';
 
 		function dateTpl(blurred, date, isToday, event, isSelected) {
 			var tpl = "<div class='a-date blurred'><span>" + date + "</span></div>";
-			
+
 			if (!blurred) {
 				var hasEvent = event && event !== null;
 				var cls = isToday ? "current " : "";
 				cls += hasEvent && isSelected ? "focused " : "";
-		
+
 				tpl = "<button type='button' class='a-date " + cls + "' data-event='" + JSON.stringify(event) + "'>";
 				tpl += "<span>" + date + "</span>";
-		
+
 				if (hasEvent && event.priority === true) {
 					tpl += "<span class='event-priority'></span>";
 				}
-		
+
 				tpl += "</button>";
 			}
 			return tpl;
@@ -202,11 +199,12 @@ import { StorageService } from '../../services/localStorage-service.js';
 				eventsLink.text("VIEW TASKS");
 				StorageService.saveData(keyDate, event.startDate);
 				eventsLink.attr("href", settings.calendar_link);
+				console.log(eventsLink);
 			} else {
 				eventTitle.text("No events on this day.");
 				eventsLink.text("CREATE TASK");
-				eventsLink.attr("href", '../../view/categorySelection.html');
-
+				eventsLink.attr("href", '../view/categorySelection.html');
+				console.log("events link: ", eventsLink);
 			}
 		}
 

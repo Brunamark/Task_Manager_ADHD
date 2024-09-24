@@ -2,8 +2,8 @@
   "users": [
     {
       "id": "5632",
-      "profilePhotoUrl": "https://i.pinimg.com/564x/60/0e/cd/600ecd4a3aed586febbb92918e39fce6.jpg",
       "name": "Gabriel",
+      "profilePhotoUrl": "https://i.pinimg.com/564x/60/0e/cd/600ecd4a3aed586febbb92918e39fce6.jpg",
       "email": "gabriel@mail.com",
       "password": "gabriel123"
     },
@@ -83,8 +83,6 @@
       "id": "102300",
       "userId": 5632,
       "friends": [
-        5633,
-        5634,
         5635,
         5636,
         5637,
@@ -300,6 +298,11 @@
     {
       "id": "782311",
       "postId": 56719,
+      "userId": 5632
+    },
+    {
+      "id": "7823111",
+      "postId": 56720,
       "userId": 5632
     }
   ],
@@ -741,6 +744,19 @@
       "title": "Add your title",
       "startDate": "2024-07-03",
       "endDate": "2024-07-03",
+      "priority": true
+    },
+    {
+      "id": "46199",
+      "userId": "5632",
+      "categoryId": 8,
+      "completion": true,
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "message": "Treinei perna",
+      "title": "Academia",
+      "startDate": "2024-09-26",
+      "endDate": "2024-09-26",
       "priority": true
     }
   ],

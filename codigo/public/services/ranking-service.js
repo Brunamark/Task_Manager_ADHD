@@ -1,6 +1,7 @@
 export class RankingService{
     constructor() {
         this.urlBase = '/ranking';
+        //this.urlBase = 'http://localhost:3000/ranking';
       }
     async getRankings(){
         try{

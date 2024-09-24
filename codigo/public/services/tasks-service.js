@@ -1,6 +1,7 @@
 export class TaskService{
     constructor() {
-        this.urlBase = '/tasks';
+       this.urlBase = '/tasks';
+       //this.urlBase =  'http://localhost:3000/tasks';
       }
     async getTasks(){
         try{

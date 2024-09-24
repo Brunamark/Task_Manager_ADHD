@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log("New Task Created:", createdTask);
                     
                     // Redirection to tasksView after successful creation
-                    window.location.href = './tasksView';
+                    window.location.href = '../view/tasksView.html';
                 } catch (error) {
                     console.error("Error creating task:", error);
                     // Handle error as needed

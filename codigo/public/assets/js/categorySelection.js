@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     const cardRead = document.querySelector(".card-read");
     const cardFinance = document.querySelector(".card-finance");
     const cardOther = document.querySelector(".card-other");
+
     cardSport.addEventListener("click", (event) => { StorageService.saveData(keyCat, 1); });
     cardArt.addEventListener("click", (event) => { StorageService.saveData(keyCat, 7); });
     cardHealth.addEventListener("click", (event) => { StorageService.saveData(keyCat, 2); });
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     allLinks.forEach(link => {
         //link.innerHTML = "<!DOCTYPE html>";
-        link.setAttribute('href', "../../view/when.html");
+        link.setAttribute('href', "../view/when.html");
     });
 
 });

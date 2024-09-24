@@ -44,29 +44,29 @@ document.addEventListener('DOMContentLoaded', async function () {
         const name = getCategoryNameById(objCategory, id);
         switch (name) {
             case "Sports":
-                return '../../assets/images/dumbbell.png';
+                return '../assets/images/dumbbell.png';
             case "Health":
-                return '../../assets/images/health.png';
+                return '../assets/images/health.png';
             case "Nutrition":
-                return '../../assets/images/nutrition.png';
+                return '../assets/images/nutrition.png';
             case "Study":
-                return '../../assets/images/study.png';
+                return '../assets/images/study.png';
             case "Entertainment":
-                return '../../assets/images/entertainment.png';
+                return '../assets/images/entertainment.png';
             case "Finance":
-                return '../../assets/images/finance.png';
+                return '../assets/images/finance.png';
             case "Art":
-                return '../../assets/images/art.png';
+                return '../assets/images/art.png';
             case "Work":
-                return '../../assets/images/work.png';
+                return '../assets/images/work.png';
             case "Home":
-                return '../../assets/images/home.png';
+                return '../assets/images/home.png';
             case "BadHabit":
-                return '../../assets/images/bad-habit.png';
+                return '../assets/images/bad-habit.png';
             case "Read":
-                return '../../assets/images/read.png';
+                return '../assets/images/read.png';
             case "Other":
-                return '../../assets/images/other.png';
+                return '../assets/images/other.png';
         }
     }
 
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
                 const imgBtn = document.createElement("img");
                 imgBtn.setAttribute("id", "imgBtn");
-                imgBtn.setAttribute("src", "../../assets/images/plus_icon.svg");
+                imgBtn.setAttribute("src", "../assets/images/plus_icon.svg");
 
                 btn.appendChild(imgBtn);
                 divBtn.appendChild(btn);
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         button.addEventListener('click', () => {
             var value = button.getAttribute('data-task-id');
             StorageService.saveData(keyTask,value);
-            window.location.href = '../../view/registrationChange.html';
+            window.location.href = '../view/registrationChange.html';
 
         });
     });

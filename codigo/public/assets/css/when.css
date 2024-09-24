@@ -22,13 +22,14 @@ body {
     min-width: 5vh;
     max-width: 5vh;
     margin-bottom: 120px;
-    margin-top: 100px;
+    margin-top: 20px ;
+    margin-left: 15px;
 
     img {
         justify-self: right;
         min-width: 3vh;
         max-width: 3vh;
-        opacity: 40%;
+        opacity: 100%;
     }
 }
 
